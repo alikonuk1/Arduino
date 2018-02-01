@@ -274,3 +274,5 @@ newData = false;
  }
 }
  
+ 
+>> ser.write('3')

@@ -1,23 +1,32 @@
-const int in1 = 7;
-const int in2 = 6;
-const int in3 = 5;
-const int in4 = 4;
+const int IN1 = 7;
+const int IN2 = 6;
+const int IN3 = 5;
+const int IN4 = 4;
+
+const int ENA = 9;
+const int ENB = 10;
 
 void setup()
 {
-  pinMode(in1, OUTPUT);
-  pinMode(in2, OUTPUT);
-  pinMode(in3, OUTPUT);
-  pinMode(in4, OUTPUT);
+
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+  pinMode(ENA, OUTPUT);
+  pinMode(ENB, OUTPUT);
 
 }
 
 void loop()
 {
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, HIGH);
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, HIGH);
+  analogWrite(ENA, 255);
+  analogWrite(ENB, 255);
+
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
   
 }
 
